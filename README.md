@@ -7,6 +7,19 @@ You can effectively use the same folders to play with **Cemu** and install direc
 
 ---
 
+## Dependencies
+
+- Python 3.10+
+- `cryptography`
+
+Install with:
+
+```bash
+pip install cryptography
+```
+
+---
+
 ## How to use
 
 1. Put these files together in the main folder:
