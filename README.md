@@ -1,45 +1,50 @@
-# WUPify
+<div align="center">
 
-Simple tool to clean and prepare **No-Intro CDN folders** for **WUP Installer** and **Cemu**.
+![WUPIFY command-center flow](docs/assets/command-center.svg)
 
-Yes **Cemu** can play it directly, you don't need to decrypt it anymore ! 
-You can effectively use the same folders to play with **Cemu** and install directly to your **Wii U**.
+# WUPIFY
 
----
+**WII U FOLDER PREPARATION**
 
-## Dependencies
+[![Sonoxo](https://img.shields.io/badge/SONOXO-ECOSYSTEM-7c3aed?style=for-the-badge)](https://github.com/sonoxo)
+![Status](https://img.shields.io/badge/STATUS-UTILITY-111827?style=for-the-badge)
 
-- Python 3.10+
-- `cryptography`
+</div>
 
-Install with:
+## What it does
+
+WUPify is a Python utility for cleaning and preparing **No-Intro CDN folders** for use with **Cemu** or **WUP Installer**.
+
+## Beginner flow
+
+1. Place `WUPify.py`, `Launch WUPify.bat`, and your legally obtained `title.cert` together.
+2. Install Python 3.10+ and `cryptography`.
+3. Run the batch launcher on Windows.
+4. Review the prepared subfolders before using them with Cemu or copying them to `SD:\\install\\` for WUP Installer.
 
 ```bash
 pip install cryptography
 ```
 
+## Certificate check
+
+You must provide `title.cert` yourself. The documented expected hashes are:
+
+- CRC32: `0B80C239`
+- MD5: `420D5E6BB1BCB09B234F02CF6A6F4597`
+
+Use this utility only with content and keys you are legally authorized to use.
+
+## Status
+
+A focused folder-preparation utility—not a hosted Sonoxo service. Read the script before running it against important files.
+
 ---
 
-## How to use
+<div align="center">
 
-1. Put these files together in the main folder:
-   - `WUPify.py`  
-   - `Launch WUPify.bat`  
-   - `title.cert` *(you need to provide it yourself)*
+**SONOXO ECOSYSTEM** · Built to make complex tools understandable
 
-2. Double-click **Launch WUPify.bat**
+The header animation automatically becomes static when your system requests reduced motion.
 
-It will automatically clean and fix all subfolders.
-
----
-
-## Notes
-
-- **Cemu:** can play the folders directly (no decryption needed)  
-- **WUP Installer:** copy the prepared folders to `SD:\install\` on your Wii U  
-- **title.cert** is required and must be next to the script  
-- **Expected hash:**  
-  - CRC32: `0B80C239`  
-  - MD5: `420D5E6BB1BCB09B234F02CF6A6F4597`  
-- You can get it with **WiiUDownloader** → *Tools → Generate fake ticket and cert*  
-  *(it's the same for all games, updates, and DLCs)*
+</div>
